@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Base</title>
+    <style>
+        form{
+            width: 40%;
+            margin: auto;
+        }
+        form p{
+            display: flex;
+            flex-direction: column;
+        }
+        form p label{
+            color: darkorange;
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+        form p input{
+            height: 40px;
+            border: unset;
+            color: antiquewhite;
+            background-color: white;
+        }
+        form input{
+            width: 60%;
+            height: 30px;
+            border: unset;
+            cursor: pointer;
+            background-color: antiquewhite;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+<a href=""><button>Home</button></a>
+<a href=""><button>Inner-page</button></a>
+<a href=""><button>portfolio</button></a>
+<a href=""><button>base</button></a>
+
+
+</body>
+{% block content %}
+{% load static %}
+{% endblock %}
+</html>

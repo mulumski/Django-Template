@@ -1,0 +1,17 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<section class="form-section">
+    <div class="form-section-container">
+        <h1>Member Registration</h1>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" name="btn-reg" value="submit">
+        </form>
+        {{ name }}
+        {{ email }}
+        {{ password }}
+    </div>
+{% endblock %}
+</section>
